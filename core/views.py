@@ -33,7 +33,7 @@ def upload_book(request):
         form = BookForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('book_list')
+            return redirect('core:book_list')
     else:
         form = BookForm()
     return render(request, 'upload_book.html', {
@@ -45,7 +45,7 @@ def delete_book(request, pk):
     if request.method == 'POST':
         book = Book.objects.get(pk=pk)
         book.delete()
-    return redirect('book_list')
+    return redirect('core:book_list')
 
 
 class BookListView(ListView):
@@ -57,5 +57,5 @@ class BookListView(ListView):
 class UploadBookView(CreateView):
     model = Book
     form_class = BookForm
-    success_url = reverse_lazy('class_book_list')
+    success_url = reverse_lazy('core:class_book_list')
     template_name = 'upload_book.html'

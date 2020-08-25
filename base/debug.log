@@ -1,0 +1,481 @@
+Watching for file changes with StatReloader
+Not Found: /
+Internal Server Error: /core/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Internal Server Error: /core/upload/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py", line 21, in upload
+    return render(request, 'upload.html', context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Internal Server Error: /core/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Internal Server Error: /core/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'home' not found. 'home' is not a valid view function or pattern name.
+Internal Server Error: /core/books/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py", line 27, in book_list
+    'books': books
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload_book' not found. 'upload_book' is not a valid view function or pattern name.
+Internal Server Error: /core/class/books/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'class_upload_book' not found. 'class_upload_book' is not a valid view function or pattern name.
+C:\Users\david\Desktop\dev\github filler\django-upload-example\core\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /core/class/books/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'class_upload_book' not found. 'class_upload_book' is not a valid view function or pattern name.
+C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /core/class/books/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'class_upload_book' not found. 'class_upload_book' is not a valid view function or pattern name.
+Watching for file changes with StatReloader
+Internal Server Error: /core/class/books/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 202, in _get_response
+    response = response.render()
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'class_upload_book' not found. 'class_upload_book' is not a valid view function or pattern name.
+Internal Server Error: /core/books/
+Traceback (most recent call last):
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\david\AppData\Local\Programs\Python\Python36-32\lib\contextlib.py", line 52, in inner
+    return func(*args, **kwds)
+  File "C:\Users\david\Desktop\dev\github filler\django-upload-example\core\views.py", line 27, in book_list
+    'books': books
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\test\utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "C:\Users\david\Desktop\proyect\Django1\new\lib\site-packages\django\urls\resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload_book' not found. 'upload_book' is not a valid view function or pattern name.
